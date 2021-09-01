@@ -3,14 +3,12 @@ import React, { useState, Suspense} from 'react';
 import { Canvas} from "@react-three/fiber";
 import { OrbitControls, useGLTF, Sky} from "@react-three/drei";
 import { Link } from 'react-router-dom';
-import DesertRens from './Components/DesertModel/DesertRens.js'
-import CustomLoader from './Components/CustomLoader/CustomLoader.js';
-import videoURL from './Components/BackgroundVideo/websitescrolling.mp4'
 import * as THREE from "three";
 import { AnimatePresence, motion } from 'framer-motion';
 
-
-
+import DesertRens from './Components/DesertModel/DesertRens.js'
+import CustomLoader from './Components/CustomLoader/CustomLoader.js';
+import videoURL from './Components/BackgroundVideo/websitescrolling.mp4'
 
 
 const Screen = () => {
@@ -63,9 +61,6 @@ export default function Intro(props){
     }
   
    
-
-
-
     return(
         <AnimatePresence>
         <motion.div className = 'introBody' exitBeforeEnter

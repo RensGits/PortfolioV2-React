@@ -1,8 +1,10 @@
 import React from 'react';
 import {AnimatePresence, motion, transform} from 'framer-motion';
-import './About.css';
-import Footer from './Components/Footer/Footer';
 import { Link } from 'react-router-dom';
+
+import Footer from './Components/Footer/Footer';
+
+import './About.css';
 
 function About () {
     return (

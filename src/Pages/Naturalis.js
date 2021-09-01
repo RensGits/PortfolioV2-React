@@ -1,34 +1,11 @@
 
-import React, {useRef} from 'react';
+import React from 'react';
+
+import { motion, AnimatePresence } from 'framer-motion';
+import Footer from './Components/Footer/Footer.js';
+
 import './Naturalis.css';
 import '../App.css';
-import Footer from './Components/Footer/Footer.js';
-import { motion, AnimatePresence } from 'framer-motion';
-import { Canvas, useFrame } from "@react-three/fiber";
-import {OrbitControls, Loader} from "@react-three/drei";
-import Tipula from './Components/TipulaModel/Tipula';
-import { Suspense } from 'react';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function Naturalis () {
     return (

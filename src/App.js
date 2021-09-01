@@ -1,3 +1,12 @@
+
+import {Route, Switch, useLocation} from 'react-router-dom';
+import { AnimatePresence} from 'framer-motion';
+
+import React , {useState, Suspense} from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import { Canvas  } from "@react-three/fiber";
+import { OrbitControls} from "@react-three/drei";
+
 import Intro from './Pages/Intro';
 import Home from './Pages/Home';
 import About from './Pages/About';
@@ -9,16 +18,12 @@ import Naturalis from './Pages/Naturalis';
 import Somzoa from './Pages/Somzoa';
 import GameOfLife from './Pages/GameOfLife'
 import Playground from './Pages/Playground';
-import {Route, Switch, useLocation} from 'react-router-dom';
-import { AnimatePresence} from 'framer-motion';
+import Radio from './Pages/Components/DesertModel/Radio.js'
 import CustomLoader from './Pages/Components/CustomLoader/CustomLoader';
-import React , {useState, Suspense} from 'react';
+
 import './Pages/Components/Navigationbar/Nav.css';
 import './App.css';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import { Canvas  } from "@react-three/fiber";
-import { OrbitControls} from "@react-three/drei";
-import Radio from './Pages/Components/DesertModel/Radio.js'
+
 
 function App() {
 
@@ -39,9 +44,6 @@ function App() {
     }   
 
    
-
-
-
   const location = useLocation();
   
 
@@ -51,10 +53,9 @@ function App() {
       <div className = 'appGrid' >
         
         <CssBaseline />
-      
-        
        
         <AnimatePresence >
+        
         <Nav/>
         
         <Switch location = {location} key = {location.key}>

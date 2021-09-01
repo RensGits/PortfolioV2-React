@@ -1,7 +1,9 @@
 import React from 'react';
 import {AnimatePresence, motion} from 'framer-motion';
-import './WeedDoctor.css';
+
 import Footer from './Components/Footer/Footer';
+
+import './WeedDoctor.css';
 
 function WeedDoctor () {
     return (
@@ -20,7 +22,8 @@ function WeedDoctor () {
         
         </AnimatePresence>
         
-    );
+        );
     }
+
     export default WeedDoctor
 

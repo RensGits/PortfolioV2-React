@@ -1,10 +1,11 @@
 import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
+
 import ReactPlayer from 'react-player';
-import './Somzoa.css';
 import Footer from './Components/Footer/Footer';
 import Pagedivider from './Components/PostHeader/Pagedivider.js'
 
+import './Somzoa.css';
 
 function Somzoa () {
 

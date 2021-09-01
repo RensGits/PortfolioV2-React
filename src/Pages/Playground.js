@@ -2,20 +2,22 @@
 import React, {useRef} from 'react';
 import { Canvas, useFrame } from "@react-three/fiber";
 import {MeshWobbleMaterial, softShadows, OrbitControls} from "@react-three/drei";
+import { Suspense } from 'react';
+import { AnimatePresence } from 'framer-motion';
+import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+
 import Footer from './Components/Footer/Footer';
-import '../App.css';
-import './Playground.css';
 import Syntax from './Components/SyntaxHighlighter/Syntax';
 import ParticlesBg from 'particles-bg';
 import BeetleAnimated from './Components/BeetleModel/BeetleAnimated';
-import { Suspense } from 'react';
 import Pirateship from './Components/ShipModel/Pirateship';
 import DesertislandAnimated from './Components/DesertModel/DesertislandAnimated';
 import PostHeader from './Components/PostHeader/PostHeader.js'
 import CustomLoader from './Components/CustomLoader/CustomLoader.js'
-import { AnimatePresence } from 'framer-motion';
-import '../App.css'
-import { Parallax, ParallaxLayer } from '@react-spring/parallax'
+
+import '../App.css';
+import './Playground.css';
+
 
 let config = {
     num: [1, 1],

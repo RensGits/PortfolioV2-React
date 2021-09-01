@@ -10,7 +10,6 @@ html,body{
 }
 
 
-
 p, a {
   color:white;
   font-family: 'Roboto', sans-serif;
@@ -21,7 +20,6 @@ p, a {
   font-size: 0.7em !important;
   text-decoration: none !important;
 }
-
 
 
 h2{
@@ -41,9 +39,6 @@ a:hover {
   font-size: 0.95em;
  
 }
-
-
-
 
 
 .cV{
@@ -111,8 +106,6 @@ button:hover{
     margin-bottom: 6vh;
 }
 
-
-
 .appGrid {
   display: grid;
   width: 99vw;
@@ -146,8 +139,6 @@ button:hover{
     width: 57em;
   }
 
-
-
 .aboutBody{
   width:57em;
   height: auto;
@@ -180,10 +171,6 @@ button:hover{
   cursor: grabbing
 }
 
-.radio{
-
-}
-
 
 @media screen and (max-width: 730px),(orientation: portrait)  {
 
@@ -208,8 +195,6 @@ button:hover{
 .radio{
   display: none;
 }
-
-
 
 
 }

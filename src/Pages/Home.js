@@ -1,12 +1,11 @@
 import { AnimatePresence, motion } from 'framer-motion';
 import React from 'react';
+
 import ProjectItem from './Components/ProjectItem/ProjectItem';
-import './Components/ProjectItem/ProjectItem.css';
 import Footer from './Components/Footer/Footer';
 import CV from '../Assets/CV_Rens_van_Driel.pdf';
 
-
-
+import './Components/ProjectItem/ProjectItem.css';
 
 
 function Home () {
