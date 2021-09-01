@@ -1,0 +1,219 @@
+.projectItem{
+    display: grid;
+    grid-template-columns: 30% 100% ;
+    grid-template-rows: 35vh auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;  
+    height: 100%;
+    z-index: 998;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    
+    
+  }
+  
+  .projectBlockLeft{
+    display: grid;
+    grid-template-rows: 40% 30% 30%;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+  }
+
+  .projectTitle{
+    color:red;
+    font-family: 'Ramabhadra', sans-serif;
+    font-size: 1.5em;
+    margin-left: 7%;
+    
+  }
+
+  .projectDescription{
+    color: black;
+    font-size: 0.7em;
+    margin-left: 7%;
+    margin-right: 20%;
+    padding-top: 2%;
+    text-align: justify;
+    margin-top: 0%;
+  }
+  .projectCategory{
+    margin-bottom: 4%;
+    text-align: right;
+    color: red;
+    writing-mode: vertical-rl;
+    
+    font-size: 0.8em;
+  }
+
+  
+  .projectBlockRight{
+    
+    position: relative;
+    z-index: 2;
+    background-color: gray;
+    
+  }
+
+  .projectImage {
+    
+    width: 150%;
+    height: auto;
+    position: relative;
+    z-index: -2;
+    
+    
+  }
+
+  .projectImageTwo {
+    
+    
+    width: 80%;
+    height: auto;
+    z-index: -2;
+    position: relative;
+    margin-top: -16%;
+    
+  }
+
+  .projectImageThree {
+    width: 120%;
+    height: auto;
+    position: relative;
+    
+    z-index: -2;
+  }
+
+  .projectImageFour {
+   
+    width: 130%;
+    height: auto;
+    position: relative;
+    z-index: -2;
+  }
+
+  .projectOverlay {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    align-items: center;
+    justify-items: center;
+    background-color: lightseagreen;
+    position: absolute;
+    z-index: 4;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    align-content: center;
+    justify-items: center;
+    
+  }
+
+  .button{
+    display:grid;
+    position: absolute;
+    justify-items: center;
+    align-items: center;
+    z-index: 1000;
+    width: 10em;
+    height: 2.3em;
+    color: white;
+    background-color: red;
+    border-style:hidden;
+    text-decoration: none;
+   
+    font-size: 0.8em;
+    
+    
+  }
+
+  .button:hover{
+    color: black;
+   
+  }
+
+  .conditionalButton{
+    display: none;
+    position: absolute !important;
+    top:50% !important;
+    left: 50% !important;
+    height: 4em !important;
+    transform: translate(-50%, -50% ) !important;
+    font-size: 0.4em;
+    
+  }
+
+  @media screen and (max-width: 950px),(orientation: portrait)  {
+    .conditionalButton{
+      display:block;
+      font-size: 0.7em;
+      margin-right: 30em;
+    }
+
+
+    
+  }
+
+  .v {
+    color: white; 
+  margin-top: 21%; }
+
+  .sixosix{
+    background-color: #606060;
+  }
+
+ .brownobrown{
+    background-color: #decdb9; 
+ }
+
+
+
+ 
+ @media only screen and (max-width: 730px) , (orientation: portrait) {
+  .projectItem{
+    display: block;
+    width: 90vw !important;
+    height: 50vh !important;
+    margin-top: 5em;
+    
+    }
+    .projectImage {
+    
+     width: 90vw !important;
+     height: 90% !important;
+    z-index: -5;
+      
+      overflow: hidden;
+      
+    }
+    .projectOverlay{
+      display: none;
+    }
+
+    .projectBlockRight{
+    
+      position: relative;
+      z-index: -2;
+      background-color: gray;
+      overflow:inherit;
+    }
+
+
+    .conditionalButton{
+      display: block;
+      
+      
+    }
+  
+    .projectImageTwo {
+     
+     margin-bottom: -5%;
+     width: 100%;
+      margin-bottom: -30%;
+      bottom: 2em;
+    
+    }
+}
+
+

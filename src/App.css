@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+
+p, a {
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.aProjects{
+  font-size: 0.7em !important;
+  text-decoration: none !important;
+}
+
+
+
+h2{
+  color:white;
+  font-family: 'Roboto', sans-serif;
+}
+
+a:hover {
+  color: red;
+}
+
+.links {
+  font-size: 2rem;
+}
+
+.hi {
+  font-size: 0.95em;
+ 
+}
+
+
+
+
+
+.cV{
+  margin-top: 1vh;
+  color: #E57070;
+  font-size: 0.9em;
+  
+}
+
+.cV:hover{
+  text-decoration: white;
+  text-decoration: line-through;
+}
+
+button{
+  font-size: 0.6em;
+  z-index: 1000;
+  width: 11vh;
+  height: 2.3vh;
+  background-color: red;
+  color:white;
+  border-radius: 0;
+  border-style:hidden;
+  margin-right: 4%;
+  margin-top: 2%;
+}
+
+button:hover{
+  color:black;
+  cursor: pointer;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 2vh;
+  width: 23vh;
+  gap: 2vh;
+}
+
+.footer {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  height: 10vh;
+  width: 100%;
+  border-top: 0.1vh solid #E57070;
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+}
+
+.footerText{
+  margin-top: -4.3vh;
+  font-size: 0.85em;
+}
+
+.quoteHeader{
+  margin-top: 5vh;
+    font-size: 2.3em;
+}
+
+.infoText{
+    font-size: 0.8em;
+    text-align: justify;
+    color: whitesmoke;
+    margin-bottom: 6vh;
+}
+
+
+
+.appGrid {
+  display: grid;
+  width: 99vw;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.introBody{
+  display: grid;
+  justify-items: top;
+  align-items: left;
+  grid-template-columns: repeat(10,1fr);
+  grid-template-rows: repeat(10,1fr);
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  z-index: 1000;
+  background-color:black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.homeBody{
+  
+  width: 57em;
+  height: auto; 
+  margin-top: 10vh;
+}
+
+.projectBody{
+    margin-top: 7em;
+    width: 57em;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+
+.aboutBody{
+  width:57em;
+  height: auto;
+  display: grid;
+  justify-items: center;
+  margin-top: 10%;
+  ;
+}
+
+.contactBody {
+  height: auto;
+  width: 57em;
+  text-align: center;
+  margin-top: 15%;
+ 
+}
+
+.playgroundBody{
+  height: auto;
+  width: 57em;
+  margin-top: 15%;
+  background-color: #000000;
+}
+
+.canvasGeneral{
+  cursor: grab
+}
+
+.canvasGeneral:active{
+  cursor: grabbing
+}
+
+.radio{
+
+}
+
+
+@media screen and (max-width: 730px),(orientation: portrait)  {
+
+.appGrid{
+  display: grid;
+  width: 100vw !important;
+}
+  
+
+.homeBody{
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  margin-left: 5vw;
+  padding: 2vw;
+}
+
+.projectBody{
+  margin-top: 0;
+}
+
+.radio{
+  display: none;
+}
+
+
+
+
 }

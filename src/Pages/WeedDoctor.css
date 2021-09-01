@@ -1,0 +1,39 @@
+
+.wdsectionTwo {
+    display: grid;
+    justify-items: center;
+    
+    background-color:black;
+    height: auto;
+}
+
+.wdsectionThree {
+    background-color:black;
+    height: auto;
+    margin-top: 3em;
+}
+
+.wdsectionFour {
+    background-color:black;
+    height: auto;
+    margin-top: 3em;
+    
+}
+
+.wdsectionFive {
+   
+    height: auto;
+}
+
+
+.wdOverviewImg{
+    width: 100%;
+}
+
+.wdFlowchartImg{
+    width: 100%;
+}
+
+.wdFigmaImg{
+    width: 100%;
+}
