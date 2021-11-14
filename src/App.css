@@ -1,30 +1,29 @@
-*{
+* {
   box-sizing: border-box;
 }
 
-html,body{
+html,
+body {
   height: 100%;
   width: 100%;
   margin: 0;
   padding: 0;
 }
 
-
-p, a {
-  color:white;
-  font-family: 'Roboto', sans-serif;
-  
+p,
+a {
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
-.aProjects{
+.aProjects {
   font-size: 0.7em !important;
   text-decoration: none !important;
 }
 
-
-h2{
-  color:white;
-  font-family: 'Roboto', sans-serif;
+h2 {
+  color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 a:hover {
@@ -37,37 +36,34 @@ a:hover {
 
 .hi {
   font-size: 0.95em;
- 
 }
 
-
-.cV{
+.cV {
   margin-top: 1vh;
-  color: #E57070;
+  color: #e57070;
   font-size: 0.9em;
-  
 }
 
-.cV:hover{
+.cV:hover {
   text-decoration: white;
   text-decoration: line-through;
 }
 
-button{
+button {
   font-size: 0.6em;
   z-index: 1000;
   width: 11vh;
   height: 2.3vh;
   background-color: red;
-  color:white;
+  color: white;
   border-radius: 0;
-  border-style:hidden;
+  border-style: hidden;
   margin-right: 4%;
   margin-top: 2%;
 }
 
-button:hover{
-  color:black;
+button:hover {
+  color: black;
   cursor: pointer;
 }
 
@@ -84,26 +80,26 @@ button:hover{
   grid-template-rows: 1fr 1fr;
   height: 10vh;
   width: 100%;
-  border-top: 0.1vh solid #E57070;
+  border-top: 0.1vh solid #e57070;
   margin-bottom: 10vh;
   margin-top: 10vh;
 }
 
-.footerText{
+.footerText {
   margin-top: -4.3vh;
   font-size: 0.85em;
 }
 
-.quoteHeader{
+.quoteHeader {
   margin-top: 5vh;
-    font-size: 2.3em;
+  font-size: 2.3em;
 }
 
-.infoText{
-    font-size: 0.8em;
-    text-align: justify;
-    color: whitesmoke;
-    margin-bottom: 6vh;
+.infoText {
+  font-size: 0.8em;
+  text-align: justify;
+  color: whitesmoke;
+  margin-bottom: 6vh;
 }
 
 .appGrid {
@@ -114,38 +110,36 @@ button:hover{
   position: relative;
 }
 
-.introBody{
+.introBody {
   display: grid;
   justify-items: top;
   align-items: left;
-  grid-template-columns: repeat(10,1fr);
-  grid-template-rows: repeat(10,1fr);
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   width: 100vw;
   height: 100vh;
   position: relative;
   z-index: 1000;
-  background-color:black;
+  background-color: black;
 }
 
-.homeBody{
-  
+.homeBody {
   width: 57em;
-  height: auto; 
+  height: auto;
   margin-top: 10vh;
 }
 
-.projectBody{
-    margin-top: 7em;
-    width: 57em;
-  }
+.projectBody {
+  margin-top: 7em;
+  width: 57em;
+}
 
-.aboutBody{
-  width:57em;
+.aboutBody {
+  width: 57em;
   height: auto;
   display: grid;
   justify-items: center;
   margin-top: 10%;
-  ;
 }
 
 .contactBody {
@@ -153,48 +147,42 @@ button:hover{
   width: 57em;
   text-align: center;
   margin-top: 15%;
- 
 }
 
-.playgroundBody{
+.playgroundBody {
   height: auto;
   width: 57em;
   margin-top: 15%;
   background-color: #000000;
 }
 
-.canvasGeneral{
-  cursor: grab
+.canvasGeneral {
+  cursor: grab;
 }
 
-.canvasGeneral:active{
-  cursor: grabbing
+.canvasGeneral:active {
+  cursor: grabbing;
 }
 
+@media screen and (max-width: 730px), (orientation: portrait) {
+  .appGrid {
+    display: grid;
+    width: 100vw !important;
+  }
 
-@media screen and (max-width: 730px),(orientation: portrait)  {
+  .homeBody {
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    margin-left: 5vw;
+    padding: 2vw;
+  }
 
-.appGrid{
-  display: grid;
-  width: 100vw !important;
-}
-  
+  .projectBody {
+    margin-top: 0;
+  }
 
-.homeBody{
-  display: flex;
-  width: 100vw;
-  flex-direction: column;
-  margin-left: 5vw;
-  padding: 2vw;
-}
-
-.projectBody{
-  margin-top: 0;
-}
-
-.radio{
-  display: none;
-}
-
-
+  .radio {
+    display: none;
+  }
 }

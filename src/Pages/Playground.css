@@ -1,11 +1,13 @@
-.canvas{
-    background-color:rgb(252, 247, 241);
-    margin-bottom: 10em;
+.canvas {
+  background-color: rgb(252, 247, 241);
+  margin-bottom: 10em;
 }
 
-.parallaxHorizontal::-webkit-scrollbar{ display: none;}
+.parallaxHorizontal::-webkit-scrollbar {
+  display: none;
+}
 
-.parralaxHorizontal{
-    overflow: -moz-scrollbars-none;
-    -ms-overflow-style: none;
+.parralaxHorizontal {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
 }

@@ -1,73 +1,61 @@
 nav {
-    position: sticky;
-    z-index: 1000;
-    display: flex;
-    width: 57em;
-    height: 8vh;
-    padding-bottom: 1%;
-   
-    background-color: black;
-    align-items: flex-end;
-    position: fixed;
-    
+  position: sticky;
+  z-index: 1000;
+  display: flex;
+  width: 57em;
+  height: 8vh;
+  padding-bottom: 1%;
+
+  background-color: black;
+  align-items: flex-end;
+  position: fixed;
+}
+
+.rD {
+  margin-bottom: 0.3%;
+  text-decoration: none;
+  font-weight: 700;
+  color: #e57070;
+  font-size: 1em;
+  flex: 6;
+}
+
+.rD:hover {
+  color: white;
+  font-size: 1.1em;
+}
+.links {
+  display: grid;
+  justify-content: end;
+  font-size: 0.8em;
+  color: #e57070;
+  text-decoration: underline;
+  text-decoration-thickness: 0.125;
+  flex: 1;
+}
+
+.links:hover {
+  color: white;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 950px), (orientation: portrait) {
+}
+
+@media screen and (max-width: 730px), (orientation: portrait) {
+  nav {
+    width: 100vw !important;
+    margin-left: 4vw;
+    padding: 3vw;
+    justify-items: space-between;
   }
 
-  .rD{
-    margin-bottom: 0.3%;
-    text-decoration: none;
-    font-weight: 700;
-    color: #E57070;
-    font-size: 1em;
-    flex:6;
-  } 
-
-  .rD:hover{
-    color: white;
-    font-size: 1.1em;
+  .rD {
+    flex: 1;
+    margin-bottom: -0.3vh;
+    align-self: flex-end;
   }
+
   .links {
-    display: grid;
-    justify-content: end;
-    font-size: 0.8em;
-    color: #E57070;
-    text-decoration: underline;
-    text-decoration-thickness: 0.125;
-    flex:1;
-    
-    
   }
-
-  .links:hover{
-      color:white;
-      font-size: 0.9em;
-  }
-
-
-  @media screen and (max-width: 950px),(orientation: portrait)  {
-    
-  }
-    
-  
-  
-  
-  @media screen and (max-width: 730px),(orientation: portrait)  {
-    nav{
-      width: 100vw !important;
-      margin-left: 4vw;
-      padding: 3vw;
-      justify-items:space-between;
-    }
-    
-    .rD{
-      flex: 1;
-      margin-bottom: -0.3vh;
-      align-self: flex-end;
-    }
-    
-    
-    .links{
-      
-      
-    }
-    
-  }
+}

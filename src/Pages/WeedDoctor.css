@@ -1,39 +1,35 @@
-
 .wdsectionTwo {
-    display: grid;
-    justify-items: center;
-    
-    background-color:black;
-    height: auto;
+  display: grid;
+  justify-items: center;
+
+  background-color: black;
+  height: auto;
 }
 
 .wdsectionThree {
-    background-color:black;
-    height: auto;
-    margin-top: 3em;
+  background-color: black;
+  height: auto;
+  margin-top: 3em;
 }
 
 .wdsectionFour {
-    background-color:black;
-    height: auto;
-    margin-top: 3em;
-    
+  background-color: black;
+  height: auto;
+  margin-top: 3em;
 }
 
 .wdsectionFive {
-   
-    height: auto;
+  height: auto;
 }
 
-
-.wdOverviewImg{
-    width: 100%;
+.wdOverviewImg {
+  width: 100%;
 }
 
-.wdFlowchartImg{
-    width: 100%;
+.wdFlowchartImg {
+  width: 100%;
 }
 
-.wdFigmaImg{
-    width: 100%;
+.wdFigmaImg {
+  width: 100%;
 }

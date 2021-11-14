@@ -1,31 +1,27 @@
-.clownImg{
-    margin-top: 1vh;
-    width: 60%;
-    height: auto;
-    text-align: center;
+.clownImg {
+  margin-top: 1vh;
+  width: 60%;
+  height: auto;
+  text-align: center;
 }
 
 .experience {
-    
+  margin-bottom: 5%;
+}
+
+.center {
+  text-align: center;
+}
+
+.infoText {
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .clownImg {
+    margin-top: 5%;
     margin-bottom: 5%;
-}
-
-
-.center{
-    text-align: center;
+    width: 100%;
+    height: auto;
   }
-
-.infoText{
-    text-align: center;
-    
-}
-
-@media only screen and (max-width:900px){
-    .clownImg{
-        margin-top: 5%;
-        margin-bottom: 5%;
-        width: 100%;
-        height: auto;
-    }
-  
 }

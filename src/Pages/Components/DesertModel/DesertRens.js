@@ -1,26 +1,29 @@
-
-import React, { useEffect, useRef} from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
-import { useFrame } from '@react-three/fiber'
-
+import React, { useEffect, useRef } from "react";
+import { useGLTF, useAnimations } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
 
 export default function Model(props) {
-  const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/desertRens.glb')
-  const { actions } = useAnimations(animations, group)
-  console.log(nodes, materials, animations)
-  useEffect(()=> {
-    actions.working.play()})
-  
-
-
-
+  const group = useRef();
+  const { nodes, materials, animations } = useGLTF("/desertRens.glb");
+  const { actions } = useAnimations(animations, group);
+  console.log(nodes, materials, animations);
+  useEffect(() => {
+    actions.working.play();
+  });
 
   return (
     <group ref={group} {...props} dispose={null}>
-      <group name="metarig" position={[-0.48, -0.47, 3.06]} rotation={[-3.14, 0.33, -3.06]}>
+      <group
+        name="metarig"
+        position={[-0.48, -0.47, 3.06]}
+        rotation={[-3.14, 0.33, -3.06]}
+      >
         <primitive object={nodes.spine} />
-        <skinnedMesh geometry={nodes.Cube003.geometry} material={materials.body} skeleton={nodes.Cube003.skeleton} />
+        <skinnedMesh
+          geometry={nodes.Cube003.geometry}
+          material={materials.body}
+          skeleton={nodes.Cube003.skeleton}
+        />
         <skinnedMesh
           geometry={nodes.Cube003_1.geometry}
           material={materials.pants}
@@ -57,7 +60,11 @@ export default function Model(props) {
         position={[7.59, 0, -0.29]}
         scale={[1, 1, 0.35]}
       />
-      <mesh geometry={nodes.Mouse.geometry} material={nodes.Mouse.material} position={[6.32, 0.25, 2.38]} />
+      <mesh
+        geometry={nodes.Mouse.geometry}
+        material={nodes.Mouse.material}
+        position={[6.32, 0.25, 2.38]}
+      />
       <mesh
         geometry={nodes.ScreenPanel.geometry}
         material={nodes.ScreenPanel.material}
@@ -79,11 +86,17 @@ export default function Model(props) {
         scale={[1.57, 0.03, 0.92]}
       />
       <group position={[-0.69, 1.27, -0.13]} scale={[0.47, 0.69, 0.69]}>
-        <mesh geometry={nodes.Cube001.geometry} material={materials['Material.002']} />
-        <mesh geometry={nodes.Cube001_1.geometry} material={nodes.Cube001_1.material} />
+        <mesh
+          geometry={nodes.Cube001.geometry}
+          material={materials["Material.002"]}
+        />
+        <mesh
+          geometry={nodes.Cube001_1.geometry}
+          material={nodes.Cube001_1.material}
+        />
       </group>
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/desertRens.glb')
+useGLTF.preload("/desertRens.glb");

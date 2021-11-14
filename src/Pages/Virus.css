@@ -1,65 +1,58 @@
-
-
 .topImage {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .sectionTwo {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 3em;
-    background-color:#A6A39E;
-    height: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+  background-color: #a6a39e;
+  height: auto;
 }
 
 .sectionThree {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    overflow: contain;
-    width: 100%;
-    height: 29.5em;
-    margin-bottom: 3em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: contain;
+  width: 100%;
+  height: 29.5em;
+  margin-bottom: 3em;
 }
 
 .sectionFour {
-    background-color:#DEDAD4;
-    height: auto;
-    margin-bottom: 3em;
-    
+  background-color: #dedad4;
+  height: auto;
+  margin-bottom: 3em;
 }
 
 .sectionFive {
-    background-color: white;
-    height: auto;
-    margin-bottom: 3em;
+  background-color: white;
+  height: auto;
+  margin-bottom: 3em;
 }
 
-.virusAppImgSectionTop{
-   
-    margin-top: 4.5%;
-    margin-bottom: 4.5%;
-    margin-right: 1.5%;
-    width: 95%;
-    height: auto;
-    top:0;
+.virusAppImgSectionTop {
+  margin-top: 4.5%;
+  margin-bottom: 4.5%;
+  margin-right: 1.5%;
+  width: 95%;
+  height: auto;
+  top: 0;
 }
 
-.virusAppImgSectionTwo{
-    width: 100%;
-    height: auto;
+.virusAppImgSectionTwo {
+  width: 100%;
+  height: auto;
 }
 
-
-.virusAppImgSectionThree{
-    margin-top: 3%;
-    width: 100%;
-    height: auto;
-
-} 
-.virusAppImgSectionFour{
-    width: 100%;
-    height: auto;
-
-} 
+.virusAppImgSectionThree {
+  margin-top: 3%;
+  width: 100%;
+  height: auto;
+}
+.virusAppImgSectionFour {
+  width: 100%;
+  height: auto;
+}

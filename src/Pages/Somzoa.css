@@ -1,42 +1,39 @@
-.somzoaProjects{
-    height: auto;
-    display: grid;
-    gap: 30vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 35vh 120vh 60vh;
+.somzoaProjects {
+  height: auto;
+  display: grid;
+  gap: 30vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 35vh 120vh 60vh;
 }
-    
 
 .szSectionTwo {
-    display: grid;
-    justify-items: center;
-    padding-top: 1vh;
-    height: 100%;
-    width: 100%;
+  display: grid;
+  justify-items: center;
+  padding-top: 1vh;
+  height: 100%;
+  width: 100%;
 }
 
 .szSectionThree {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    padding-bottom: 6em;
-    width: 100%;
-    margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding-bottom: 6em;
+  width: 100%;
+  margin: 0;
 }
 
 .szSectionFour {
-    display: grid;
-    justify-items: center;
-    width: 100%;
-    height: 100%;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 .szSectionFive {
-    
-    height: 100%;
+  height: 100%;
 }
 
-.infoText{
-    margin-right: 3vh
+.infoText {
+  margin-right: 3vh;
 }
-
