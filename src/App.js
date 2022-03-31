@@ -23,6 +23,7 @@ import CustomLoader from "./Pages/Components/CustomLoader/CustomLoader";
 
 import "./Pages/Components/Navigationbar/Nav.css";
 import "./App.css";
+import BestBooks from "./Pages/BestBooks";
 
 function App() {
   const [audio] = useState(new Audio("/Marshmallow.wav"));
@@ -39,7 +40,7 @@ function App() {
       audio.pause();
     }
   }
-
+  
   const location = useLocation();
 
   return (
@@ -61,6 +62,8 @@ function App() {
           <Route path="/gameoflife" component={GameOfLife} />
           <Route path="/playground" component={Playground} />
           <Route path="/browseclumsys" component={BrowseClumsys} />
+          <Route path="/bestbooks" component={BestBooks} />
+
         </Switch>
       </AnimatePresence>
       <div

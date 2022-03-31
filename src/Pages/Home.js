@@ -49,6 +49,16 @@ function Home() {
           exit={{ opacity: 0 }}
           className="projectBody"
         >
+           <ProjectItem
+            blockright="projectBlockRight brownobrown "
+            link="/bestbooks"
+            className="projectImageThree"
+            image="/homepagePreview.png"
+            duration="1"
+            projectname="BestBooks"
+            category="React / Firebase"
+            description="BestBooks is a web application for browsing books retrieved from the 'New York Times' Books API. This API provides data on all books rated and reviewed by the New York Times. "
+          />
           <ProjectItem
             blockright="projectBlockRight brownobrown "
             link="/browseclumsys"
