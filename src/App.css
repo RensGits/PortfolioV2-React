@@ -45,8 +45,7 @@ a:hover {
 }
 
 .cV:hover {
-  text-decoration: white;
-  text-decoration: line-through;
+  color:white
 }
 
 button {
@@ -132,6 +131,11 @@ button:hover {
 .projectBody {
   margin-top: 7em;
   width: 57em;
+}
+
+.project-image{
+  width: 100%;
+  margin-bottom: 2em
 }
 
 .aboutBody {

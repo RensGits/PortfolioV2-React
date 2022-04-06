@@ -1,8 +1,12 @@
+import '../App.css'
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Footer from "./Components/Footer/Footer";
 
 export default function BestBooks() {
+
+
+
     return (
         <AnimatePresence exitBeforeEnter>
             <motion.div
@@ -51,7 +55,6 @@ export default function BestBooks() {
                     transition={{ duration: 1 }}
                     className="buttons"
                 >
-
                     <a href="https://bestbooks-51a67.web.app" target="_blank">
                         <button>TO DEPLOYMENT</button>
                     </a>
@@ -68,7 +71,7 @@ export default function BestBooks() {
                     <img
                         src="/homepage.png"
                         alt=""
-                        style={{ width: "100%", marginBottom: "2em" }}
+                        className="project-image"
                     />
                 </motion.div>
                 <motion.div
@@ -80,7 +83,7 @@ export default function BestBooks() {
                     <img
                         src="/listview.png"
                         alt=""
-                        style={{ width: "100%", marginBottom: "2em" }}
+                        className="project-image"
                     />
                 </motion.div>
                 <motion.div
@@ -89,11 +92,10 @@ export default function BestBooks() {
                     exit={{ y: 0 }}
                     transition={{ duration: 1.3 }}
                 >
-                  
                     <img
                         src="/search.png"
                         alt=""
-                        style={{ width: "100%", marginBottom: "2em" }}
+                        className="project-image"
                     />
                 </motion.div>
                 <motion.div
@@ -102,11 +104,10 @@ export default function BestBooks() {
                     exit={{ y: 0 }}
                     transition={{ duration: 1.3 }}
                 >
-                  
                     <img
                         src="/login.png"
                         alt=""
-                        style={{ width: "100%", marginBottom: "2em" }}
+                        className="project-image"
                     />
                 </motion.div>
                 <motion.div
@@ -115,11 +116,10 @@ export default function BestBooks() {
                     exit={{ y: 0 }}
                     transition={{ duration: 1.3 }}
                 >
-                  
                     <img
                         src="/profile.png"
                         alt=""
-                        style={{ width: "100%", marginBottom: "2em" }}
+                        className="project-image"
                     />
                 </motion.div>
                 <motion.div
@@ -132,7 +132,7 @@ export default function BestBooks() {
                     <img
                         src="/reviews.png"
                         alt=""
-                        style={{ width: "100%", marginBottom: "2em" }}
+                        className="project-image"
                     />
                 </motion.div>
             </motion.div>

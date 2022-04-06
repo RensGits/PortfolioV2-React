@@ -41,7 +41,7 @@ function Home() {
             href={CV}
             target="_blank"
           >
-            Download my CV
+            Download my resume
           </a>
         </motion.p>
         <motion.div
