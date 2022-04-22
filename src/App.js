@@ -1,11 +1,9 @@
 import { Route, Switch, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
-
 import React, { useState, Suspense } from "react";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-
 import Intro from "./Pages/Intro";
 import Home from "./Pages/Home";
 import About from "./Pages/About";
@@ -46,10 +44,8 @@ function App() {
   return (
     <div className="appGrid">
       <CssBaseline />
-
       <AnimatePresence>
         <Nav />
-
         <Switch location={location} key={location.key}>
           <Route path="/" exact component={Intro} />
           <Route path="/projects" component={Home} />
@@ -63,7 +59,6 @@ function App() {
           <Route path="/playground" component={Playground} />
           <Route path="/browseclumsys" component={BrowseClumsys} />
           <Route path="/bestbooks" component={BestBooks} />
-
         </Switch>
       </AnimatePresence>
       <div

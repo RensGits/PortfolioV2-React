@@ -1,3 +1,4 @@
+import '../App.css'
 import React from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Footer from "./Components/Footer/Footer";
@@ -77,7 +78,7 @@ export default function BrowseClumsys() {
           <img
             src="/clumsydetails.png"
             alt=""
-            style={{ width: "100%", marginBottom: "2em" }}
+            className="project-image"
           />
         </motion.div>
         <motion.div
@@ -97,7 +98,7 @@ export default function BrowseClumsys() {
           <img
             src="/clumsycomparison.png"
             alt=""
-            style={{ width: "100%", marginBottom: "2em" }}
+            className="project-image"
           />
         </motion.div>
         <motion.div
@@ -116,7 +117,7 @@ export default function BrowseClumsys() {
           <img
             src="/clumsystats.png"
             alt=""
-            style={{ width: "100%", marginBottom: "2em" }}
+            className="project-image"
           />
         </motion.div>
       </motion.div>
